@@ -1,0 +1,248 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.button1 {
+  background-color: #f4efcc;
+  width: 200px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  color: #024d46;
+  text-align: center;
+  font-weight: bolder;
+  transition: ease-in-out 0.5s;
+}
+.button1:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.yonlendirme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.cafeContainer {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.hero-section {
+  background-image: url("./assets/deneme.jpeg"); /* Burada resim yolunu değiştir */
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Arka plan koyulaştırması */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #f0e68c;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff8000;
+}
+
+/* ********************************************* */
+
+.about-section {
+  margin-top: 50px;
+
+  text-align: center;
+  min-height: 50vh;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f0e68c;
+  text-transform: uppercase;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 30vh;
+  overflow: hidden; /* Dışarı taşmayı engeller */
+  gap: 20px;
+}
+
+.image-column,
+.text-column {
+  flex: 1;
+  object-fit: cover;
+
+  max-height: 50vh;
+}
+
+.image-column {
+  overflow: hidden; /* Dışarı taşmayı engeller */
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-column {
+  text-align: center;
+  max-width: 400px;
+}
+
+.subheading {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #f0e68c;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #f0e68c;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* ********************************************* */
+
+.special-menu {
+  width: 100%;
+  
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 2.5rem;
+  color: #f0e68c;
+  margin-bottom: 20px;
+}
+
+.menu-image {
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+}
+
+.menu-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-item {
+  background-color: #222;
+  padding: 20px;
+  width: 200px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.menu-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #aaa;
+}
