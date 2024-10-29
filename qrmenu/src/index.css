@@ -13,11 +13,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.inner-header-garden {
+  font-size: smaller;
+}
 body {
   margin: 0%;
   padding: 0%;
 }
 
+.cafe-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-header-garden {
+  display: flex;
+  gap: 20px;
+}
+
+.cvv {
+  font-size: smaller;
+}
+
+.sisha-shop {
+  color: white;
+}
 .button1 {
   background-color: #f4efcc;
   width: 200px;
@@ -197,7 +221,7 @@ body {
 .special-menu {
   margin-top: 20px;
   width: 100%;
-  
+
   background-color: #111;
   color: white;
   padding: 20px;
@@ -246,4 +270,25 @@ body {
 .description {
   font-size: 0.9rem;
   color: #aaa;
+}
+
+.oneri {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.oneri-btn {
+  border-radius: 20px;
+  background-color: #f0e68c;
+  color: #5c3828;
+  font-weight: bolder;
+  font-size: larger;
+  padding: 1%;
+  width: 30%;
+  text-align: center;
+}
+
+.oneri-btn:hover {
+  cursor: pointer;
 }
