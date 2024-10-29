@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React from "react";
 
 function SpecialMenu({ title, imageUrl, dishes }) {
   return (
@@ -11,7 +10,7 @@ function SpecialMenu({ title, imageUrl, dishes }) {
         {dishes.map((dish, index) => (
           <div className="menu-item" key={index}>
             <h3>{dish.name}</h3>
-            <p>${dish.price}</p>
+            <p>{dish.price} TL</p>
             <p className="description">{dish.description}</p>
           </div>
         ))}

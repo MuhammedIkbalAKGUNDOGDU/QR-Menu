@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/cafe.png";
 import bannerleft from "../assets/deneme.jpeg";
 import SpecialMenu from "./specialmenus";
 
 const cafe = () => {
+  const [isMenuFixed, setIsMenuFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsMenuFixed(window.scrollY > 900);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const gotoEmail = () => {
     const email = "naccar2458@gmail.com";
     const subject = "Şikayet / Öneri";
@@ -14,6 +27,17 @@ const cafe = () => {
     )}&body=${encodeURIComponent(body)}`;
   };
 
+  window.addEventListener("scroll", function () {
+    const menu = document.getElementById("menu");
+    const scrollY = window.scrollY;
+
+    if (scrollY > 200) {
+      // 200px kaydırma sonrası sabitle
+      menu.classList.add("fixed");
+    } else {
+      menu.classList.remove("fixed");
+    }
+  });
   const sicakIcecekler = [
     { name: "Demleme Çay", price: 28, description: "" },
     { name: "Fincan Çay", price: 55, description: "" },
@@ -262,7 +286,9 @@ const cafe = () => {
           <a href="https://ytshisha.com" className="sisha-shop">
             Otto Shisha Shop{" "}
           </a>
-          <div className="tel_number">+90 (539) 341 27 16</div>
+          <a className="telanchor" href="tel:+905393412716">
+            +90 (539) 341 27 16
+          </a>
           <div className="cvv">
             Son Fiyat Güncellemesi (00/00/0000) Fiyatlarımıza KDV dahildir
           </div>
@@ -303,14 +329,32 @@ const cafe = () => {
           </div>
         </div>
       </div>
-      <a href="/ottomania-cafe#nargile"> Nargileler</a>
-      <a href="/ottomania-cafe#sicak"> Sıcak İçecekler</a>
-      <a href="/ottomania-cafe#soguk"> Soğuk içecekler</a>
-      <a href="/ottomania-cafe#kokteyl"> Alkolsüz kokteyller</a>
-      <a href="/ottomania-cafe#izgara"> Izgarlar</a>
-      <a href="/ottomania-cafe#salata"> Salatalar</a>
-      <a href="/ottomania-cafe#tost"> Tostlar </a>
-      <a href="/ottomania-cafe#tatli"> Tatlılar</a>
+      <div className={isMenuFixed ? "fixed" : "fix-menu"}>
+        <div>
+          <a href="/ottomania-cafe#nargile"> Nargileler</a>
+        </div>
+        <div>
+          <a href="/ottomania-cafe#sicak"> Sıcak İçecekler</a>
+        </div>
+        <div>
+          <a href="/ottomania-cafe#soguk"> Soğuk içecekler</a>
+        </div>
+        <div>
+          <a href="/ottomania-cafe#kokteyl"> Alkolsüz kokteyller</a>
+        </div>
+        <div>
+          <a href="/ottomania-cafe#izgara"> Izgarlar</a>
+        </div>
+        <div>
+          <a href="/ottomania-cafe#salata"> Salatalar</a>
+        </div>
+        <div>
+          <a href="/ottomania-cafe#tost"> Tostlar </a>
+        </div>
+        <div>
+          <a href="/ottomania-cafe#tatli"> Tatlılar</a>
+        </div>
+      </div>
 
       <div id="sicak"></div>
       <SpecialMenu

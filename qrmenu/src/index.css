@@ -292,3 +292,48 @@ body {
 .oneri-btn:hover {
   cursor: pointer;
 }
+
+.fix-menu {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  transition: top 0.3s; /* Geçiş efektini ekle */
+
+  flex-wrap: wrap;
+  div {
+    background-color: #f0e68c;
+    border-radius: 20px;
+    padding: 2px;
+    a {
+      color: #5c3828;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
+
+.fixed {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  transition: top 0.3s; /* Geçiş efektini ekle */
+
+  flex-wrap: wrap;
+  div {
+    background-color: #f0e68c;
+    border-radius: 20px;
+    padding: 2px;
+    a {
+      color: #5c3828;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+  position: fixed;
+  top: 10px;
+}
+
+.telanchor{
+  color: white;
+  text-decoration: none;
+}

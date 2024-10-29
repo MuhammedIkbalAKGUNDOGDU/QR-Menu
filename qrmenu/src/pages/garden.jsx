@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/gardenlogo.png";
 import bannerleft from "../assets/deneme.jpeg";
 import SpecialMenu from "./specialmenus";
 
 const garden = () => {
+  const [isMenuFixed, setIsMenuFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsMenuFixed(window.scrollY > 900);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const gotoEmail = () => {
     const email = "naccar2458@gmail.com";
     const subject = "Şikayet / Öneri";
@@ -13,6 +26,18 @@ const garden = () => {
       subject
     )}&body=${encodeURIComponent(body)}`;
   };
+
+  window.addEventListener("scroll", function () {
+    const menu = document.getElementById("menu");
+    const scrollY = window.scrollY;
+
+    if (scrollY > 200) {
+      // 200px kaydırma sonrası sabitle
+      menu.classList.add("fixed");
+    } else {
+      menu.classList.remove("fixed");
+    }
+  });
 
   {
     /*<img src={imageUrl} alt="Dish" className="menu-image" />*/
@@ -315,7 +340,9 @@ const garden = () => {
           <a href="https://ytshisha.com" className="sisha-shop">
             Otto Shisha Shop{" "}
           </a>
-          <div className="tel_number">+90 (539) 341 27 16</div>
+          <div className="tel_number">
+            <a className="telanchor" href="tel:+905393412716">+90 (539) 341 27 16</a>
+          </div>{" "}
           <div className="cvv">
             Son Fiyat Güncellemesi (00/00/0000) Fiyatlarımıza KDV dahildir
           </div>
@@ -356,11 +383,36 @@ const garden = () => {
         </div>
       </div>
 
+      <div className={isMenuFixed ? "fixed" : "fix-menu"}>
+        <div>
+          <a href="/ottomania-garden#nargile"> Nargileler</a>
+        </div>
+        <div>
+          <a href="/ottomania-garden#sicak"> Sıcak İçecekler</a>
+        </div>
+        <div>
+          <a href="/ottomania-garden#soguk"> Soğuk içecekler</a>
+        </div>
+        <div>
+          <a href="/ottomania-garden#kokteyl"> Alkolsüz kokteyller</a>
+        </div>
+        <div>
+          <a href="/ottomania-garden#izgara"> Izgarlar</a>
+        </div>
+        <div>
+          <a href="/ottomania-garden#tava"> Tavalar</a>
+        </div>
+        <div>
+          <a href="/ottomania-garden#tatli"> Tatlılar</a>
+        </div>
+      </div>
+      <div id="izgara"></div>
       <SpecialMenu
         title="Izgaralar"
         imageUrl={bannerleft}
         dishes={izgaralar}
       ></SpecialMenu>
+      <div id="tava"></div>
 
       <SpecialMenu
         title="Tavalar"
@@ -373,19 +425,79 @@ const garden = () => {
         imageUrl={bannerleft}
         dishes={atistirmaliklar}
       ></SpecialMenu>
-
+      <div id="tatli"></div>
       <SpecialMenu
         title="Tatlılar"
         imageUrl={bannerleft}
         dishes={tatlilar}
       ></SpecialMenu>
+      <div id="sicak"></div>
+
+      <SpecialMenu
+        title="Sıcak İçecekler"
+        imageUrl={bannerleft}
+        dishes={sicakIcecekler}
+      ></SpecialMenu>
+
+      <SpecialMenu
+        title="Sıcak Kahveler"
+        imageUrl={sicakKahveler}
+        dishes={ottoNSerisi}
+      ></SpecialMenu>
+      <div id="soguk"></div>
 
       <SpecialMenu
         title="Soğuk İçecekler"
         imageUrl={bannerleft}
         dishes={sogukIcecekler}
       ></SpecialMenu>
+      <SpecialMenu
+        title="Soğuk Kahveler"
+        imageUrl={sogukKahveler}
+        dishes={ottoIceTeaSerisi}
+      ></SpecialMenu>
 
+      <SpecialMenu
+        title="Frappuccino Çeşitleri"
+        imageUrl={bannerleft}
+        dishes={frappuccinoCesitleri}
+      ></SpecialMenu>
+
+      <SpecialMenu
+        title="Limonatalar"
+        imageUrl={bannerleft}
+        dishes={limonatalar}
+      ></SpecialMenu>
+
+      <SpecialMenu
+        title="BubbleTea Çeşitleri"
+        imageUrl={bannerleft}
+        dishes={bubbleTeaCesitleri}
+      ></SpecialMenu>
+
+      <SpecialMenu
+        title="Smothie Çeşitleri"
+        imageUrl={sicakKahveler}
+        dishes={smoothieCesitleri}
+      ></SpecialMenu>
+      <SpecialMenu
+        title="Milkshae Çeşitleri"
+        imageUrl={sogukKahveler}
+        dishes={milkshakeCesitleri}
+      ></SpecialMenu>
+
+      <SpecialMenu
+        title="Frozen Çeşitleri"
+        imageUrl={bannerleft}
+        dishes={frozenCesitleri}
+      ></SpecialMenu>
+      <div id="kokteyl"></div>
+
+      <SpecialMenu
+        title="Kokteyller"
+        imageUrl={bannerleft}
+        dishes={kokteyller}
+      ></SpecialMenu>
       <SpecialMenu
         title="Premium Nargileler"
         imageUrl={bannerleft}
@@ -428,62 +540,6 @@ const garden = () => {
         dishes={ottoNSerisi}
       ></SpecialMenu>
 
-      <SpecialMenu
-        title="Sıcak İçecekler"
-        imageUrl={bannerleft}
-        dishes={sicakIcecekler}
-      ></SpecialMenu>
-
-      <SpecialMenu
-        title="Sıcak Kahveler"
-        imageUrl={sicakKahveler}
-        dishes={ottoNSerisi}
-      ></SpecialMenu>
-      <SpecialMenu
-        title="Soğuk Kahveler"
-        imageUrl={sogukKahveler}
-        dishes={ottoIceTeaSerisi}
-      ></SpecialMenu>
-
-      <SpecialMenu
-        title="Frappuccino Çeşitleri"
-        imageUrl={bannerleft}
-        dishes={frappuccinoCesitleri}
-      ></SpecialMenu>
-
-      <SpecialMenu
-        title="Limonatalar"
-        imageUrl={bannerleft}
-        dishes={limonatalar}
-      ></SpecialMenu>
-
-      <SpecialMenu
-        title="BubbleTea Çeşitleri"
-        imageUrl={bannerleft}
-        dishes={bubbleTeaCesitleri}
-      ></SpecialMenu>
-
-      <SpecialMenu
-        title="Smothie Çeşitleri"
-        imageUrl={sicakKahveler}
-        dishes={smoothieCesitleri}
-      ></SpecialMenu>
-      <SpecialMenu
-        title="Milkshae Çeşitleri"
-        imageUrl={sogukKahveler}
-        dishes={milkshakeCesitleri}
-      ></SpecialMenu>
-
-      <SpecialMenu
-        title="Frozen Çeşitleri"
-        imageUrl={bannerleft}
-        dishes={frozenCesitleri}
-      ></SpecialMenu>
-      <SpecialMenu
-        title="Kokteyller"
-        imageUrl={bannerleft}
-        dishes={kokteyller}
-      ></SpecialMenu>
       <div className="oneri">
         <div onClick={gotoEmail} className="oneri-btn">
           Şikayet/Öneri
