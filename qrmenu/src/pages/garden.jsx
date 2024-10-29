@@ -4,28 +4,101 @@ import bannerleft from "../assets/deneme.jpeg";
 import SpecialMenu from "./specialmenus";
 
 const garden = () => {
-  const dishes = [
+  {
+    /*<img src={imageUrl} alt="Dish" className="menu-image" />*/
+  }
+  const izgaralar = [
     {
-      name: "Fines Tartare Steak",
-      price: 50,
+      name: "Izgara Köfte",
+      price: 350,
       description:
         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
     },
     {
-      name: "Creamy Chicken Soup",
-      price: 60,
+      name: "Izgara Sucuk",
+      price: 350,
       description:
         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
     },
     {
-      name: "Boiled Eggs on Toast",
-      price: 10,
+      name: "Kuzu Pirzola",
+      price: 600,
       description:
         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
     },
     {
-      name: "Best Roasted Rumpsteak",
-      price: 110,
+      name: "Antrikot",
+      price: 600,
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    },
+    {
+      name: "Izgara Kanat",
+      price: 270,
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    },
+    {
+      name: "Izgara İncik",
+      price: 270,
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    },
+  ];
+  {
+    /*<img src={imageUrl} alt="Dish" className="menu-image" />*/
+  }
+  const tavalar = [
+    {
+      name: "Menemen",
+      price: 160,
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    },
+    {
+      name: "Sahanda Yumurta",
+      price: 160,
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    },
+    {
+      name: "Sucuklu Yumurta",
+      price: 200,
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    },
+    {
+      name: "Serpme Kahvaltı",
+      price: 450,
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    },
+  ];
+  {
+    /*<img src={imageUrl} alt="Dish" className="menu-image" />*/
+  }
+  const atistirmaliklar = [
+    {
+      name: "Patates Tabağı",
+      price: 125,
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    },
+    {
+      name: "Çerez Tabağı",
+      price: 200,
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    },
+    {
+      name: "Meyve Tabağı",
+      price: 250,
+      description:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    },
+    {
+      name: "Otto Çıtır Tabağı",
+      price: 225,
       description:
         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
     },
@@ -107,15 +180,21 @@ const garden = () => {
       </div>
 
       <SpecialMenu
-        title="Our Special"
+        title="Izgaralar"
         imageUrl={bannerleft}
-        dishes={dishes}
+        dishes={izgaralar}
       ></SpecialMenu>
 
       <SpecialMenu
-        title="soğuk içecek"
+        title="Tavalar"
         imageUrl={bannerleft}
-        dishes={dishes}
+        dishes={tavalar}
+      ></SpecialMenu>
+
+      <SpecialMenu
+        title="Atıştırmalıklar"
+        imageUrl={bannerleft}
+        dishes={atistirmaliklar}
       ></SpecialMenu>
     </div>
   );
