@@ -299,7 +299,7 @@ body {
   justify-content: center;
   max-width: 100%;
   transition: top 0.3s; /* Geçiş efektini ekle */
-
+  
   flex-wrap: wrap;
   div {
     background-color: #f0e68c;
