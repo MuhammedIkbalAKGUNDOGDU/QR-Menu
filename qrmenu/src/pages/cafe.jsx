@@ -280,18 +280,6 @@ const cafe = () => {
 
   return (
     <div className="cafeContainer">
-      <div className="cafe-header">
-        <img className="img-2" src={logo} alt="" />
-        <div className="inner-header-garden">
-          <a className="telanchor" href="tel:+905393412716">
-            İletişim
-          </a>
-          <a href="https://ytshisha.com" className="sisha-shop">
-            Otto Shisha Shop{" "}
-          </a>
-        </div>
-      </div>
-
       <div className="cafe-banner">
         <div className="hero-section">
           <div className="content">
@@ -301,7 +289,10 @@ const cafe = () => {
           </div>
         </div>
       </div>
-
+      <div className="cvv">
+        <div>Fiyatlarımıza KDV dahildir</div>
+        <div> Son Fiyat Güncellemesi (28/10/2024)</div>
+      </div>
       <div className="about-section">
         <h2 className="section-title">Menü</h2>
       </div>
@@ -482,9 +473,6 @@ const cafe = () => {
         <div onClick={gotoEmail} className="oneri-btn">
           Şikayet/Öneri
         </div>
-      </div>
-      <div className="cvv">
-        Son Fiyat Güncellemesi (28/10/2024) Fiyatlarımıza KDV dahildir
       </div>
     </div>
   );

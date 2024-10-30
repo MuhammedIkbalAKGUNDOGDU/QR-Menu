@@ -341,7 +341,10 @@ const garden = () => {
           </div>
         </div>
       </div>
-
+      <div className="cvv">
+        <div>Fiyatlarımıza KDV dahildir</div>
+        <div> Son Fiyat Güncellemesi (28/10/2024)</div>
+      </div>
       <div className="about-section">
         <h2 className="section-title">Menü</h2>
       </div>
@@ -508,9 +511,7 @@ const garden = () => {
           Şikayet/Öneri
         </div>
       </div>
-      <div className="cvv">
-        Son Fiyat Güncellemesi (28/10/2024) Fiyatlarımıza KDV dahildir
-      </div>
+      
     </div>
   );
 };
