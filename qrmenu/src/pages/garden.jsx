@@ -46,38 +46,32 @@ const garden = () => {
     {
       name: "Izgara Köfte",
       price: 350,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
     {
       name: "Izgara Sucuk",
       price: 350,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
     {
       name: "Kuzu Pirzola",
       price: 600,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
     {
       name: "Antrikot",
       price: 600,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
     {
       name: "Izgara Kanat",
       price: 270,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
     {
       name: "Izgara İncik",
       price: 270,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
   ];
   {
@@ -87,26 +81,22 @@ const garden = () => {
     {
       name: "Menemen",
       price: 160,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
     {
       name: "Sahanda Yumurta",
       price: 160,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
     {
       name: "Sucuklu Yumurta",
       price: 200,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
     {
       name: "Serpme Kahvaltı",
       price: 450,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
   ];
   {
@@ -116,26 +106,22 @@ const garden = () => {
     {
       name: "Patates Tabağı",
       price: 125,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
     {
       name: "Çerez Tabağı",
       price: 200,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
     {
       name: "Meyve Tabağı",
       price: 250,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
     {
       name: "Otto Çıtır Tabağı",
       price: 225,
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      description: "",
     },
   ];
 
@@ -335,52 +321,29 @@ const garden = () => {
   return (
     <div className="cafeContainer">
       <div className="cafe-header">
-        <img src={logo} alt="" />
+        <img className="img-2" src={logo} alt="" />
         <div className="inner-header-garden">
           <a href="https://ytshisha.com" className="sisha-shop">
             Otto Shisha Shop{" "}
           </a>
-          <div className="tel_number">
-            <a className="telanchor" href="tel:+905393412716">+90 (539) 341 27 16</a>
-          </div>{" "}
-          <div className="cvv">
-            Son Fiyat Güncellemesi (00/00/0000) Fiyatlarımıza KDV dahildir
-          </div>
+
+          <a className="telanchor" href="tel:+905393412716">
+            İletişim
+          </a>
         </div>
       </div>
       <div className="cafe-banner">
         <div className="hero-section">
           <div className="content">
-            <p className="subheading">welcome to the delicious universe</p>
-            <h1 className="heading">BEHIND THE DISHES</h1>
-            <p className="description">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium.
-            </p>
-            <button className="btn">EXPLORE</button>
+            <img className="logo-1" src={logo} alt="" />
+            <h1 className="heading">OTTOMANIA</h1>
+            <p className="description">Nargilede Yeni Bir Dünya</p>
           </div>
         </div>
       </div>
 
       <div className="about-section">
-        <h2 className="section-title">About Us</h2>
-        <div className="content-wrapper">
-          <div className="image-column">
-            <img src={bannerleft} alt="Traditional Dish" />
-          </div>
-          <div className="text-column">
-            <p className="subheading">a taste of perfection</p>
-            <h3 className="heading">TRADITIONAL & MODERN</h3>
-            <p className="description">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium.
-            </p>
-            <button className="btn">READ MORE</button>
-          </div>
-          <div className="image-column">
-            <img src={bannerleft} alt="Modern Dish" />
-          </div>
-        </div>
+        <h2 className="section-title">Menü</h2>
       </div>
 
       <div className={isMenuFixed ? "fixed" : "fix-menu"}>
@@ -397,7 +360,7 @@ const garden = () => {
           <a href="/ottomania-garden#kokteyl"> Alkolsüz kokteyller</a>
         </div>
         <div>
-          <a href="/ottomania-garden#izgara"> Izgarlar</a>
+          <a href="/ottomania-garden#izgara"> Izgaralar</a>
         </div>
         <div>
           <a href="/ottomania-garden#tava"> Tavalar</a>
@@ -544,6 +507,9 @@ const garden = () => {
         <div onClick={gotoEmail} className="oneri-btn">
           Şikayet/Öneri
         </div>
+      </div>
+      <div className="cvv">
+        Son Fiyat Güncellemesi (28/10/2024) Fiyatlarımıza KDV dahildir
       </div>
     </div>
   );

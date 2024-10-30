@@ -28,6 +28,9 @@ body {
 .cafe-header {
   display: flex;
   justify-content: space-between;
+  padding-left: 1%;
+  padding-top: 1%;
+  padding-right: 1%;
 }
 
 .inner-header-garden {
@@ -36,7 +39,7 @@ body {
 }
 
 .cvv {
-  font-size: smaller;
+  font-size: 0.75rem;
 }
 
 .sisha-shop {
@@ -68,16 +71,21 @@ body {
 }
 
 .cafeContainer {
-  margin: 2%;
+  margin: 0%;
   display: flex;
   flex-direction: column;
   height: 10vh;
-  img {
-    width: 50px;
-    height: 50px;
-  }
 }
 
+.img-2 {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-1 {
+  width: 100px;
+  height: 100px;
+}
 .hero-section {
   background-image: url("./assets/deneme.jpeg"); /* Burada resim yolunu değiştir */
   background-size: cover;
@@ -107,22 +115,10 @@ body {
   z-index: 2;
 }
 
-.subheading {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #f0e68c;
-}
-
 .heading {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 15px;
-}
-
-.description {
-  font-size: 1rem;
-  max-width: 600px;
-  margin: 0 auto 20px;
 }
 
 .btn {
@@ -146,7 +142,7 @@ body {
   margin-top: 50px;
 
   text-align: center;
-  min-height: 50vh;
+  min-height: 20vh;
 }
 
 .section-title {
@@ -186,23 +182,6 @@ body {
 .text-column {
   text-align: center;
   max-width: 400px;
-}
-
-.subheading {
-  font-size: 1rem;
-  margin-bottom: 10px;
-  color: #f0e68c;
-}
-
-.heading {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.description {
-  font-size: 1rem;
-  margin-bottom: 20px;
 }
 
 .btn {
@@ -268,7 +247,7 @@ body {
 }
 
 .description {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #aaa;
 }
 
@@ -285,7 +264,8 @@ body {
   font-weight: bolder;
   font-size: larger;
   padding: 1%;
-  width: 30%;
+  width: 60%;
+  justify-content: center;
   text-align: center;
 }
 
@@ -333,7 +313,52 @@ body {
   top: 10px;
 }
 
-.telanchor{
-  color: white;
+.telanchor {
   text-decoration: none;
+  color: white;
+}
+
+.sisha-shop {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 420px) {
+  .cvv {
+    font-size: 0.3rem;
+  }
+  .img-2 {
+    display: none;
+  }
+  .sisha-shop {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    background-color: #f0e68c;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #5c3828;
+    padding: 1%;
+  }
+
+  .cafe-header {
+    margin-top: 3%;
+    margin: 2%;
+    display: flex;
+    justify-content: right;
+  }
+  .telanchor {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    background-color: #f0e68c;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #5c3828;
+    padding: 1%;
+  }
+  .inner-header-garden {
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    margin-right: 3%;
+  }
 }
