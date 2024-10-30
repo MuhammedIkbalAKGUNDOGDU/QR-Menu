@@ -96,7 +96,7 @@ const garden = () => {
     {
       name: "Serpme Kahvaltı",
       price: 450,
-      description: "",
+      description: "Tek kişilik",
     },
   ];
   {
@@ -131,7 +131,7 @@ const garden = () => {
     { name: "Frambuazlı Pasta", price: 160, description: "" },
     { name: "Orman Meyveli Pasta", price: 160, description: "" },
     { name: "Fırın Sütlaç", price: 160, description: "" },
-    { name: "Sansebastian", price: 180, description: "" },
+    { name: "Sansebastian", price: 190, description: "" },
     { name: "Otto Special Pasta", price: 190, description: "" },
   ];
 
@@ -144,11 +144,11 @@ const garden = () => {
     { name: "Vişne Suyu", price: 75, description: "" },
     { name: "Şeftali Suyu", price: 75, description: "" },
     { name: "Karışık Meyve Suyu", price: 75, description: "" },
-    { name: "Ayran", price: 80, description: "" },
+    { name: "Ayran", price: 60, description: "" },
     { name: "Soda", price: 45, description: "" },
     { name: "Elmalı Soda", price: 50, description: "" },
     { name: "Limonlu Soda", price: 50, description: "" },
-    { name: "Churchill", price: 80, description: "" },
+    { name: "Churchill", price: 50, description: "" },
     { name: "Redbull", price: 125, description: "" },
   ];
 
@@ -195,7 +195,7 @@ const garden = () => {
     { name: "Blueberry", price: 325, description: "" },
     { name: "Fresh Mix", price: 325, description: "" },
     { name: "Mint Cream", price: 325, description: "" },
-    { name: "Çiçi Bebe", price: 325, description: "" },
+    { name: "Cici Bebe", price: 325, description: "" },
     { name: "Petibör", price: 325, description: "" },
     { name: "Çift Elma Special", price: 325, description: "" },
   ];
@@ -215,7 +215,7 @@ const garden = () => {
   const sicakIcecekler = [
     { name: "Demleme Çay", price: 28, description: "" },
     { name: "Fincan Çay", price: 55, description: "" },
-    { name: "Fincan Bitki Çayı", price: 55, description: "" },
+    { name: "Fincan Bitki Çayı", price: 95, description: "" },
     { name: "Sıcak Çikolata", price: 95, description: "" },
     { name: "Salep", price: 95, description: "" },
     { name: "Çikolatalı Salep", price: 110, description: "" },
@@ -226,11 +226,11 @@ const garden = () => {
   const sicakKahveler = [
     { name: "Türk Kahvesi", price: 70, description: "" },
     { name: "Espresso", price: 70, description: "" },
-    { name: "Damla Sakızlı Türk Kahvesi", price: 75, description: "" },
+    { name: "Damla Sakızlı Türk Kahvesi", price: 80, description: "" },
     { name: "Menengiç Kahvesi", price: 80, description: "" },
     { name: "Osmanlı Kahvesi", price: 80, description: "" },
     { name: "Nescafe", price: 80, description: "" },
-    { name: "Filtre Kahve", price: 95, description: "" },
+    { name: "Filtre Kahve", price: 90, description: "" },
     { name: "Americano", price: 95, description: "" },
     { name: "Double Espresso", price: 95, description: "" },
     { name: "Chai Tea Latte", price: 110, description: "" },
@@ -245,8 +245,8 @@ const garden = () => {
   const sogukKahveler = [
     { name: "Ice Filtre Kahve", price: 110, description: "" },
     { name: "Ice Americano", price: 110, description: "" },
-    { name: "Ice Chai Tea Latte", price: 110, description: "" },
-    { name: "Ice Latte", price: 110, description: "" },
+    { name: "Ice Chai Tea Latte", price: 125, description: "" },
+    { name: "Ice Latte", price: 125, description: "" },
     { name: "Ice Caramel Latte", price: 125, description: "" },
     { name: "Ice Macchiato", price: 125, description: "" },
     { name: "Ice Mocha", price: 125, description: "" },
@@ -314,7 +314,7 @@ const garden = () => {
     { name: "Big Boss", price: 170, description: "" },
     { name: "Pinacolada", price: 170, description: "" },
     { name: "Pineapple", price: 170, description: "" },
-    { name: "Sprite Blossom", price: 170, description: "" },
+    { name: "Sprite Blossom", price: 190, description: "" },
     { name: "Otto Special Kokteyl", price: 190, description: "" },
   ];
 

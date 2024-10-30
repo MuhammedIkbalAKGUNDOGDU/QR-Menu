@@ -41,7 +41,7 @@ const cafe = () => {
   const sicakIcecekler = [
     { name: "Demleme Çay", price: 28, description: "" },
     { name: "Fincan Çay", price: 55, description: "" },
-    { name: "Fincan Bitki Çayı", price: 55, description: "" },
+    { name: "Fincan Bitki Çayı", price: 95, description: "" },
     { name: "Sıcak Çikolata", price: 95, description: "" },
     { name: "Salep", price: 95, description: "" },
     { name: "Çikolatalı Salep", price: 110, description: "" },
@@ -54,7 +54,7 @@ const cafe = () => {
     { name: "Menengiç Kahvesi", price: 80, description: "" },
     { name: "Osmanlı Kahvesi", price: 80, description: "" },
     { name: "Nescafe", price: 80, description: "" },
-    { name: "Filtre Kahve", price: 95, description: "" },
+    { name: "Filtre Kahve", price: 90, description: "" },
     { name: "Americano", price: 95, description: "" },
     { name: "Double Espresso", price: 95, description: "" },
     { name: "Chai Tea Latte", price: 110, description: "" },
@@ -85,10 +85,10 @@ const cafe = () => {
     { name: "Şeftali Suyu", price: 75, description: "" },
     { name: "Karışık Meyve Suyu", price: 75, description: "" },
     { name: "Ayran", price: 60, description: "" },
-    { name: "Soda", price: 50, description: "" },
+    { name: "Soda", price: 45, description: "" },
     { name: "Elmalı Soda", price: 50, description: "" },
     { name: "Limonlu Soda", price: 50, description: "" },
-    { name: "Churchill", price: 75, description: "" },
+    { name: "Churchill", price: 50, description: "" },
     { name: "Redbull", price: 125, description: "" },
   ];
 
@@ -155,7 +155,7 @@ const cafe = () => {
     { name: "Big Boss", price: 170, description: "" },
     { name: "Pina Colada", price: 170, description: "" },
     { name: "Pineapple", price: 170, description: "" },
-    { name: "Sprite Blossom", price: 170, description: "" },
+    { name: "Sprite Blossom", price: 190, description: "" },
     { name: "Otto Special Kokteyl", price: 190, description: "" },
   ];
 
