@@ -315,9 +315,7 @@ const cafe = () => {
         <div>
           <a href="/ottomania-cafe#soguk"> Soğuk içecekler</a>
         </div>
-        <div>
-          <a href="/ottomania-cafe#kokteyl"> Alkolsüz kokteyller</a>
-        </div>
+
         <div>
           <a href="/ottomania-cafe#izgara"> Izgaralar</a>
         </div>
@@ -329,6 +327,9 @@ const cafe = () => {
         </div>
         <div>
           <a href="/ottomania-cafe#tatli"> Tatlılar</a>
+        </div>
+        <div>
+          <a href="/ottomania-cafe#kokteyl"> Alkolsüz kokteyller</a>
         </div>
       </div>
 
