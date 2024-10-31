@@ -320,18 +320,6 @@ const garden = () => {
 
   return (
     <div className="cafeContainer">
-      <div className="cafe-header">
-        <img className="img-2" src={logo} alt="" />
-        <div className="inner-header-garden">
-          <a href="https://ytshisha.com" className="sisha-shop">
-            Otto Shisha Shop{" "}
-          </a>
-
-          <a className="telanchor" href="tel:+905393412716">
-            İletişim
-          </a>
-        </div>
-      </div>
       <div className="cafe-banner">
         <div className="hero-section">
           <div className="content">
@@ -464,6 +452,9 @@ const garden = () => {
         imageUrl={bannerleft}
         dishes={kokteyller}
       ></SpecialMenu>
+
+      <div id="nargile"></div>
+
       <SpecialMenu
         title="Premium Nargileler"
         imageUrl={bannerleft}
@@ -511,7 +502,6 @@ const garden = () => {
           Şikayet/Öneri
         </div>
       </div>
-      
     </div>
   );
 };

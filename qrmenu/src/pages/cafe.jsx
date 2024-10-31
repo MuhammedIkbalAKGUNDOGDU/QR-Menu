@@ -402,7 +402,7 @@ const cafe = () => {
         dishes={burgerler}
       ></SpecialMenu>
       <SpecialMenu
-        title="Tabuk Yemekleri"
+        title="Tavuk Yemekleri"
         imageUrl={bannerleft}
         dishes={tavukYemekleri}
       ></SpecialMenu>
