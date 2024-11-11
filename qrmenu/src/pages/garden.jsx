@@ -93,11 +93,6 @@ const garden = () => {
       price: 200,
       description: "",
     },
-    {
-      name: "Serpme Kahvaltı",
-      price: 450,
-      description: "Tek kişilik",
-    },
   ];
   {
     /*<img src={imageUrl} alt="Dish" className="menu-image" />*/
