@@ -391,7 +391,7 @@ const garden = () => {
       <SpecialMenu
         title="Sıcak Kahveler"
         imageUrl={sicakKahveler}
-        dishes={sicakIcecekler}
+        dishes={sicakKahveler}
       ></SpecialMenu>
       <div id="soguk"></div>
 
