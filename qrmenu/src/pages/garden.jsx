@@ -391,7 +391,7 @@ const garden = () => {
       <SpecialMenu
         title="Sıcak Kahveler"
         imageUrl={sicakKahveler}
-        dishes={ottoNSerisi}
+        dishes={sicakIcecekler}
       ></SpecialMenu>
       <div id="soguk"></div>
 
@@ -403,7 +403,7 @@ const garden = () => {
       <SpecialMenu
         title="Soğuk Kahveler"
         imageUrl={sogukKahveler}
-        dishes={ottoIceTeaSerisi}
+        dishes={sogukKahveler}
       ></SpecialMenu>
 
       <SpecialMenu
