@@ -122,7 +122,7 @@ const garden = () => {
     { name: "Frambuazlı Pasta", price: 180, description: "" },
     { name: "Orman Meyveli Pasta", price: 180, description: "" },
     { name: "Fırın Sütlaç", price: 180, description: "" },
-    { name: "Tirileçe", price: 180, description: "" },
+    { name: "Trileçe", price: 180, description: "" },
     { name: "Sansebastian", price: 200, description: "" },
     { name: "Otto Special Pasta", price: 200, description: "" },
   ];
