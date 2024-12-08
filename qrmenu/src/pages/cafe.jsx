@@ -226,9 +226,9 @@ const cafe = () => {
   ];
 
   const ottoKlasikNargile = [
-    { name: "Otto Klasik Nargile", price: 300, description: "" },
-    { name: "Kafa", price: 180, description: "" },
-    { name: "Buz", price: 60, description: "" },
+    { name: "Otto Klasik Nargile", price: 345, description: "" },
+    { name: "Kafa", price: 220, description: "" },
+    { name: "Buz", price: 70, description: "" },
   ];
 
   const darkSerisi = [
@@ -303,7 +303,7 @@ const cafe = () => {
         <div>
           <a href="/ottomania-cafe#soguk"> Soğuk içecekler</a>
         </div>
-        pp
+        
         <div>
           <a href="/ottomania-cafe#izgara"> Izgaralar</a>
         </div>
