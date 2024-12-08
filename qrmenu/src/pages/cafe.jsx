@@ -100,7 +100,6 @@ const cafe = () => {
     { name: "Ice Macchiato", price: 125, description: "" },
     { name: "Ice Mocha", price: 125, description: "" },
     { name: "Ice White Mocha", price: 125, description: "" },
-    { name: "Cold Brew", price: 125, description: "" },
     { name: "Cortado", price: 125, description: "" },
     { name: "Ice Chai Tea Latte", price: 125, description: "" },
   ];
@@ -127,7 +126,6 @@ const cafe = () => {
     { name: "Karamel", price: 150, description: "" },
     { name: "Çikolata", price: 150, description: "" },
     { name: "Muz", price: 150, description: "" },
-    { name: "Oreo", price: 160, description: "" },
   ];
 
   const frozenCesitleri = [
@@ -168,7 +166,6 @@ const cafe = () => {
 
   const tostlar = [
     { name: "Kaşarlı Tost", price: 120, description: "" },
-    { name: "Akdeniz Tost", price: 120, description: "" },
     { name: "Karışık Tost", price: 130, description: "" },
   ];
 
@@ -242,13 +239,13 @@ const cafe = () => {
     { name: "Spectrum", price: 550, description: "" },
     { name: "Musthave", price: 550, description: "" },
     { name: "Satyr", price: 550, description: "" },
-    { name: "Buta", price: 550, description: "" },
     { name: "Dozaj", price: 550, description: "" },
     { name: "Aircraft", price: 550, description: "" },
     { name: "Mattpear", price: 550, description: "" },
     { name: "Jam", price: 550, description: "" },
     { name: "Duft", price: 550, description: "" },
     { name: "Darkside", price: 550, description: "" },
+    { name: "Manterra", price: 550, description: "" },
     { name: "Revosh", price: 550, description: "" },
     { name: "Paco", price: 550, description: "" },
   ];
@@ -291,7 +288,7 @@ const cafe = () => {
       </div>
       <div className="cvv">
         <div>Fiyatlarımıza KDV dahildir</div>
-        <div> Son Fiyat Güncellemesi (28/10/2024)</div>
+        <div> Son Fiyat Güncellemesi (15.11.2024)</div>
       </div>
       <div className="about-section">
         <h2 className="section-title">Menü</h2>
@@ -306,7 +303,7 @@ const cafe = () => {
         <div>
           <a href="/ottomania-cafe#soguk"> Soğuk içecekler</a>
         </div>
-
+        pp
         <div>
           <a href="/ottomania-cafe#izgara"> Izgaralar</a>
         </div>
@@ -336,7 +333,6 @@ const cafe = () => {
         dishes={sicakKahveler}
       ></SpecialMenu>
       <div id="soguk"></div>
-
       <SpecialMenu
         title="Limonatalar"
         imageUrl={bannerleft}

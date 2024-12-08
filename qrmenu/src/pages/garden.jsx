@@ -45,12 +45,12 @@ const garden = () => {
   const izgaralar = [
     {
       name: "Izgara Köfte",
-      price: 350,
+      price: 390,
       description: "",
     },
     {
       name: "Izgara Sucuk",
-      price: 350,
+      price: 390,
       description: "",
     },
     {
@@ -65,18 +65,16 @@ const garden = () => {
     },
     {
       name: "Izgara Kanat",
-      price: 270,
+      price: 300,
       description: "",
     },
     {
       name: "Izgara İncik",
-      price: 270,
+      price: 300,
       description: "",
     },
   ];
-  {
-    /*<img src={imageUrl} alt="Dish" className="menu-image" />*/
-  }
+
   const tavalar = [
     {
       name: "Menemen",
@@ -90,13 +88,11 @@ const garden = () => {
     },
     {
       name: "Sucuklu Yumurta",
-      price: 200,
+      price: 160,
       description: "",
     },
   ];
-  {
-    /*<img src={imageUrl} alt="Dish" className="menu-image" />*/
-  }
+
   const atistirmaliklar = [
     {
       name: "Patates Tabağı",
@@ -105,111 +101,125 @@ const garden = () => {
     },
     {
       name: "Çerez Tabağı",
-      price: 200,
-      description: "",
-    },
-    {
-      name: "Meyve Tabağı",
       price: 250,
       description: "",
     },
     {
+      name: "Meyve Tabağı",
+      price: 300,
+      description: "",
+    },
+    {
       name: "Otto Çıtır Tabağı",
-      price: 225,
+      price: 250,
       description: "",
     },
   ];
 
   const tatlilar = [
-    { name: "Tiramisu", price: 160, description: "" },
-    { name: "Limonlu Cheesecake", price: 160, description: "" },
-    { name: "Frambuazlı Pasta", price: 160, description: "" },
-    { name: "Orman Meyveli Pasta", price: 160, description: "" },
-    { name: "Fırın Sütlaç", price: 160, description: "" },
-    { name: "Sansebastian", price: 190, description: "" },
-    { name: "Otto Special Pasta", price: 190, description: "" },
+    { name: "Tiramisu", price: 180, description: "" },
+    { name: "Limonlu Cheesecake", price: 180, description: "" },
+    { name: "Frambuazlı Pasta", price: 180, description: "" },
+    { name: "Orman Meyveli Pasta", price: 180, description: "" },
+    { name: "Fırın Sütlaç", price: 180, description: "" },
+    { name: "Tirileçe", price: 180, description: "" },
+    { name: "Sansebastian", price: 200, description: "" },
+    { name: "Otto Special Pasta", price: 200, description: "" },
   ];
 
   const sogukIcecekler = [
-    { name: "Su", price: 23, description: "" },
-    { name: "Kola Turka", price: 75, description: "" },
-    { name: "Çamlıca Portakal", price: 75, description: "" },
-    { name: "Çamlıca Gazoz", price: 75, description: "" },
-    { name: "Didi", price: 75, description: "" },
-    { name: "Vişne Suyu", price: 75, description: "" },
-    { name: "Şeftali Suyu", price: 75, description: "" },
-    { name: "Karışık Meyve Suyu", price: 75, description: "" },
+    { name: "Su", price: 28, description: "" },
+    { name: "Kola Turka", price: 80, description: "" },
+    { name: "Çamlıca Portakal", price: 80, description: "" },
+    { name: "Çamlıca Gazoz", price: 80, description: "" },
+    { name: "Didi", price: 80, description: "" },
+    { name: "Vişne Suyu", price: 80, description: "" },
+    { name: "Şeftali Suyu", price: 80, description: "" },
+    { name: "Karışık Meyve Suyu", price: 80, description: "" },
     { name: "Ayran", price: 60, description: "" },
-    { name: "Soda", price: 45, description: "" },
-    { name: "Elmalı Soda", price: 50, description: "" },
-    { name: "Limonlu Soda", price: 50, description: "" },
-    { name: "Churchill", price: 50, description: "" },
-    { name: "Redbull", price: 125, description: "" },
+    { name: "Soda", price: 50, description: "" },
+    { name: "Elmalı Soda", price: 60, description: "" },
+    { name: "Limonlu Soda", price: 60, description: "" },
+    { name: "Churchill", price: 60, description: "" },
+    { name: "Redbull", price: 135, description: "" },
+    { name: "Kola turka (L) ", price: 125, description: "" },
+    { name: "Çamlıca portakal (L)", price: 125, description: "" },
+    { name: "ŞALGAM (L) ", price: 125, description: "" },
+    { name: "AYRAN (L) ", price: 125, description: "" },
   ];
 
   const premiumNargileler = [
-    { name: "Freezone", price: 390, description: "" },
-    { name: "Social Smoke", price: 480, description: "" },
+    { name: "Freezone", price: 450, description: "" },
+    { name: "Social Smoke", price: 550, description: "" },
+  ];
+
+  const tostlar = [
+    { name: "Kaşarlı Tost", price: 120, description: "" },
+    { name: "Karışık Tost", price: 130, description: "" },
   ];
 
   const naturalNargileler = [
-    { name: "Full Natural Nargile", price: 1100, description: "" },
-    { name: "Otto Natural Nargile", price: 650, description: "" },
+    { name: "Full Natural Nargile", price: 1250, description: "" },
+    { name: "Otto Natural Nargile", price: 750, description: "" },
   ];
 
   const ottoKlasikNargile = [
-    { name: "Otto Klasik Nargile", price: 300, description: "" },
-    { name: "Kafa", price: 180, description: "" },
-    { name: "Buz", price: 60, description: "" },
+    { name: "Otto Klasik Nargile", price: 345, description: "" },
+    { name: "Kafa", price: 220, description: "" },
+    { name: "Buz", price: 70, description: "" },
   ];
 
   const darkSerisi = [
-    { name: "Bonche", price: 600, description: "" },
-    { name: "Kraken", price: 600, description: "" },
-    { name: "Tangiers", price: 550, description: "" },
-    { name: "Brusko", price: 550, description: "" },
-    { name: "Spectrum", price: 550, description: "" },
-    { name: "Musthave", price: 550, description: "" },
-    { name: "Satyr", price: 550, description: "" },
-    { name: "Buta", price: 550, description: "" },
-    { name: "Doza", price: 550, description: "" },
-    { name: "Aircraft", price: 550, description: "" },
-    { name: "Mattpear", price: 550, description: "" },
-    { name: "Jam", price: 550, description: "" },
-    { name: "Duft", price: 550, description: "" },
-    { name: "Darkside", price: 550, description: "" },
-    { name: "Revosh", price: 550, description: "" },
-    { name: "Paco", price: 550, description: "" },
+    { name: "Bonche", price: 700, description: "" },
+    { name: "Kraken", price: 700, description: "" },
+    { name: "Tangiers", price: 650, description: "" },
+    { name: "Brusko", price: 650, description: "" },
+    { name: "Spectrum", price: 650, description: "" },
+    { name: "Musthave", price: 650, description: "" },
+    { name: "Satyr", price: 650, description: "" },
+    { name: "Dozaj", price: 650, description: "" },
+    { name: "Aircraft", price: 650, description: "" },
+    { name: "Mattpear", price: 650, description: "" },
+    { name: "Duft", price: 650, description: "" },
+    { name: "Darkside", price: 650, description: "" },
+    { name: "Manterra", price: 650, description: "" },
+    { name: "Revosh", price: 650, description: "" },
+    { name: "Paco", price: 650, description: "" },
   ];
 
   const ottoSpecialNargile = [
-    { name: "Şikayetsiz", price: 325, description: "" },
-    { name: "Boğaz Sefası", price: 325, description: "" },
-    { name: "Şımarık", price: 325, description: "" },
-    { name: "Otto Special", price: 325, description: "" },
-    { name: "Blueberry", price: 325, description: "" },
-    { name: "Fresh Mix", price: 325, description: "" },
-    { name: "Mint Cream", price: 325, description: "" },
-    { name: "Cici Bebe", price: 325, description: "" },
-    { name: "Petibör", price: 325, description: "" },
-    { name: "Çift Elma Special", price: 325, description: "" },
+    { name: "Şikayetsiz", price: 370, description: "" },
+    { name: "Boğaz Sefası", price: 370, description: "" },
+    { name: "Şımarık", price: 370, description: "" },
+    { name: "Otto Special", price: 370, description: "" },
+    { name: "Blueberry", price: 370, description: "" },
+    { name: "Fresh Mix", price: 370, description: "" },
+    { name: "Mint Cream", price: 370, description: "" },
+    { name: "Cici Bebe", price: 370, description: "" },
+    { name: "Petibör", price: 370, description: "" },
+    { name: "Çift Elma Special", price: 370, description: "" },
   ];
 
   const ottoIceTeaSerisi = [
-    { name: "Jibiar", price: 350, description: "" },
-    { name: "Adalya", price: 350, description: "" },
+    { name: "Jibiar", price: 395, description: "" },
+    { name: "Adalya", price: 395, description: "" },
+  ];
+
+  const salata = [
+    { name: "Mevsim Salata", price: 200, description: "" },
+    { name: "Çoban Salata", price: 200, description: "" },
   ];
 
   const ottoNSerisi = [
-    { name: "Çift Elma", price: 325, description: "" },
-    { name: "Şeftali", price: 325, description: "" },
-    { name: "Cappuccino", price: 325, description: "" },
-    { name: "Vişne", price: 325, description: "" },
+    { name: "Çift Elma", price: 345, description: "" },
+    { name: "Şeftali", price: 345, description: "" },
+    { name: "Cappuccino", price: 345, description: "" },
+    { name: "Vişne", price: 345, description: "" },
   ];
 
   const sicakIcecekler = [
-    { name: "Demleme Çay", price: 28, description: "" },
-    { name: "Fincan Çay", price: 55, description: "" },
+    { name: "Demleme Çay", price: 34, description: "" },
+    { name: "Fincan Çay", price: 60, description: "" },
     { name: "Fincan Bitki Çayı", price: 95, description: "" },
     { name: "Sıcak Çikolata", price: 95, description: "" },
     { name: "Salep", price: 95, description: "" },
@@ -246,7 +256,6 @@ const garden = () => {
     { name: "Ice Macchiato", price: 125, description: "" },
     { name: "Ice Mocha", price: 125, description: "" },
     { name: "Ice White Mocha", price: 125, description: "" },
-    { name: "Cold Brew", price: 125, description: "" },
     { name: "Cortado", price: 125, description: "" },
   ];
 
@@ -257,60 +266,59 @@ const garden = () => {
   ];
 
   const limonatalar = [
-    { name: "Sade Limonata", price: 85, description: "" },
-    { name: "Karpuz Limonata", price: 95, description: "" },
-    { name: "Mango Limonata", price: 95, description: "" },
-    { name: "Nane Limonata", price: 95, description: "" },
-    { name: "Çilek Limonata", price: 95, description: "" },
-    { name: "Şeftali Limonata", price: 95, description: "" },
+    { name: "Sade Limonata", price: 95, description: "" },
+    { name: "Karpuz Limonata", price: 105, description: "" },
+    { name: "Mango Limonata", price: 105, description: "" },
+    { name: "Nane Limonata", price: 105, description: "" },
+    { name: "Çilek Limonata", price: 105, description: "" },
+    { name: "Şeftali Limonata", price: 105, description: "" },
   ];
 
   const bubbleTeaCesitleri = [
-    { name: "Ananas", price: 150, description: "" },
-    { name: "Çilek", price: 150, description: "" },
-    { name: "Hibiscus", price: 150, description: "" },
-    { name: "Kahve", price: 150, description: "" },
+    { name: "Ananas", price: 160, description: "" },
+    { name: "Çilek", price: 160, description: "" },
+    { name: "Hibiscus", price: 160, description: "" },
+    { name: "Kahve", price: 160, description: "" },
   ];
 
   const smoothieCesitleri = [
-    { name: "Kırmızı Orman Meyveleri", price: 150, description: "" },
-    { name: "Mango", price: 150, description: "" },
-    { name: "Şeftali", price: 150, description: "" },
-    { name: "Çilek", price: 150, description: "" },
-    { name: "Karpuz", price: 150, description: "" },
-    { name: "Kivi", price: 150, description: "" },
-    { name: "Muz", price: 150, description: "" },
+    { name: "Kırmızı Orman Meyveleri", price: 160, description: "" },
+    { name: "Mango", price: 160, description: "" },
+    { name: "Şeftali", price: 160, description: "" },
+    { name: "Çilek", price: 160, description: "" },
+    { name: "Karpuz", price: 160, description: "" },
+    { name: "Kivi", price: 160, description: "" },
+    { name: "Muz", price: 160, description: "" },
   ];
 
   const milkshakeCesitleri = [
-    { name: "Çilek", price: 150, description: "" },
-    { name: "Vanilya", price: 150, description: "" },
-    { name: "Karamel", price: 150, description: "" },
-    { name: "Çikolata", price: 150, description: "" },
-    { name: "Muz", price: 150, description: "" },
-    { name: "Oreo", price: 150, description: "" },
+    { name: "Çilek", price: 160, description: "" },
+    { name: "Vanilya", price: 160, description: "" },
+    { name: "Karamel", price: 160, description: "" },
+    { name: "Çikolata", price: 160, description: "" },
+    { name: "Muz", price: 160, description: "" },
   ];
 
   const frozenCesitleri = [
-    { name: "Mango", price: 135, description: "" },
-    { name: "Çilek", price: 135, description: "" },
-    { name: "Karpuz", price: 135, description: "" },
-    { name: "Kavun", price: 135, description: "" },
-    { name: "Limon", price: 135, description: "" },
-    { name: "Kivi", price: 135, description: "" },
-    { name: "Şeftali", price: 135, description: "" },
-    { name: "Orman Meyveli", price: 135, description: "" },
+    { name: "Mango", price: 150, description: "" },
+    { name: "Çilek", price: 150, description: "" },
+    { name: "Karpuz", price: 150, description: "" },
+    { name: "Kavun", price: 150, description: "" },
+    { name: "Limon", price: 150, description: "" },
+    { name: "Kivi", price: 150, description: "" },
+    { name: "Şeftali", price: 150, description: "" },
+    { name: "Orman Meyveli", price: 150, description: "" },
     { name: "Otto Special", price: 150, description: "" },
   ];
 
   const kokteyller = [
-    { name: "Mojito", price: 170, description: "" },
-    { name: "Tropikal", price: 170, description: "" },
-    { name: "Big Boss", price: 170, description: "" },
-    { name: "Pinacolada", price: 170, description: "" },
-    { name: "Pineapple", price: 170, description: "" },
-    { name: "Sprite Blossom", price: 190, description: "" },
-    { name: "Otto Special Kokteyl", price: 190, description: "" },
+    { name: "Mojito", price: 190, description: "" },
+    { name: "Tropikal", price: 190, description: "" },
+    { name: "Big Boss", price: 190, description: "" },
+    { name: "Pinacolada", price: 190, description: "" },
+    { name: "Pineapple", price: 190, description: "" },
+    { name: "Sprite Blossom", price: 210, description: "" },
+    { name: "Otto Special Kokteyl", price: 210, description: "" },
   ];
 
   return (
@@ -326,7 +334,7 @@ const garden = () => {
       </div>
       <div className="cvv">
         <div>Fiyatlarımıza KDV dahildir</div>
-        <div> Son Fiyat Güncellemesi (28/10/2024)</div>
+        <div> Son Fiyat Güncellemesi (15.11.2024)</div>
       </div>
       <div className="about-section">
         <h2 className="section-title">Menü</h2>
@@ -352,6 +360,9 @@ const garden = () => {
           <a href="/ottomania-garden#tava"> Tavalar</a>
         </div>
         <div>
+          <a href="/ottomania-garden#salata"> Salatalar</a>
+        </div>
+        <div>
           <a href="/ottomania-garden#tatli"> Tatlılar</a>
         </div>
       </div>
@@ -373,6 +384,12 @@ const garden = () => {
         title="Atıştırmalıklar"
         imageUrl={bannerleft}
         dishes={atistirmaliklar}
+      ></SpecialMenu>
+      <div id="salata"></div>
+      <SpecialMenu
+        title="Salatalar"
+        imageUrl={bannerleft}
+        dishes={salata}
       ></SpecialMenu>
       <div id="tatli"></div>
       <SpecialMenu
