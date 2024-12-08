@@ -182,9 +182,9 @@ const garden = () => {
     { name: "Mattpear", price: 650, description: "" },
     { name: "Duft", price: 650, description: "" },
     { name: "Darkside", price: 650, description: "" },
-    { name: "Manterra", price: 650, description: "" },
-    { name: "Revosh", price: 650, description: "" },
-    { name: "Paco", price: 650, description: "" },
+    { name: "Manterra", price: 550, description: "" },
+    { name: "Revoshi", price: 550, description: "" },
+    { name: "Paco", price: 550, description: "" },
   ];
 
   const ottoSpecialNargile = [

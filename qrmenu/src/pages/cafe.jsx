@@ -246,7 +246,7 @@ const cafe = () => {
     { name: "Duft", price: 550, description: "" },
     { name: "Darkside", price: 550, description: "" },
     { name: "Manterra", price: 550, description: "" },
-    { name: "Revosh", price: 550, description: "" },
+    { name: "Revoshi", price: 550, description: "" },
     { name: "Paco", price: 550, description: "" },
   ];
 
