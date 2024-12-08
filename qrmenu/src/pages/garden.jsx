@@ -144,8 +144,8 @@ const garden = () => {
     { name: "Redbull", price: 135, description: "" },
     { name: "Kola turka (L) ", price: 125, description: "" },
     { name: "Çamlıca portakal (L)", price: 125, description: "" },
-    { name: "ŞALGAM (L) ", price: 125, description: "" },
-    { name: "AYRAN (L) ", price: 125, description: "" },
+    { name: "Şalgam (L) ", price: 125, description: "" },
+    { name: "Ayran (L) ", price: 125, description: "" },
   ];
 
   const premiumNargileler = [
@@ -447,7 +447,7 @@ const garden = () => {
         dishes={smoothieCesitleri}
       ></SpecialMenu>
       <SpecialMenu
-        title="Milkshae Çeşitleri"
+        title="Milkshake Çeşitleri"
         imageUrl={sogukKahveler}
         dishes={milkshakeCesitleri}
       ></SpecialMenu>
