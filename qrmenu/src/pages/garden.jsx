@@ -135,6 +135,7 @@ const garden = () => {
     { name: "Didi", price: 80, description: "" },
     { name: "Vişne Suyu", price: 80, description: "" },
     { name: "Şeftali Suyu", price: 80, description: "" },
+   
     { name: "Karışık Meyve Suyu", price: 80, description: "" },
     { name: "Ayran", price: 60, description: "" },
     { name: "Soda", price: 50, description: "" },
@@ -142,6 +143,9 @@ const garden = () => {
     { name: "Limonlu Soda", price: 60, description: "" },
     { name: "Churchill", price: 60, description: "" },
     { name: "Redbull", price: 135, description: "" },
+    { name: "Sıkma Portakal Suyu", price: 135, description: "" },
+    { name: "Sıkma Nar Suyu", price: 135, description: "" },
+    { name: "Sıkma Portakal Nar Suyu", price: 135, description: "" },
     { name: "Kola turka (L) ", price: 125, description: "" },
     { name: "Çamlıca portakal (L)", price: 125, description: "" },
     { name: "Şalgam (L) ", price: 125, description: "" },

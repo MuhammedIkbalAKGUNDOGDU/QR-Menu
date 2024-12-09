@@ -90,6 +90,9 @@ const cafe = () => {
     { name: "Limonlu Soda", price: 60, description: "" },
     { name: "Churchill", price: 60, description: "" },
     { name: "Redbull", price: 135, description: "" },
+    { name: "Sıkma Portakal Suyu", price: 135, description: "" },
+    { name: "Sıkma Nar Suyu", price: 135, description: "" },
+    { name: "Sıkma Portakal Nar Suyu", price: 135, description: "" },
   ];
 
   const sogukKahveler = [
@@ -303,7 +306,7 @@ const cafe = () => {
         <div>
           <a href="/ottomania-cafe#soguk"> Soğuk içecekler</a>
         </div>
-        
+
         <div>
           <a href="/ottomania-cafe#izgara"> Izgaralar</a>
         </div>
